@@ -1,0 +1,22 @@
+# Flask Connector Dependencies
+# For running on Cloud Run and connecting Google Chat to Vertex AI
+
+# Web framework
+Flask>=3.0.0
+gunicorn>=21.2.0
+
+# Google Cloud libraries
+google-auth>=2.29.0
+google-cloud-aiplatform>=1.60.0
+
+# For calling Vertex AI Agent Engine
+vertexai>=1.60.0
+
+# HTTP client for outbound requests
+requests>=2.31.0
+
+# Environment variables (for local development)
+python-dotenv>=1.0.0
+
+# Async worker for gunicorn
+gevent>=24.2.0
