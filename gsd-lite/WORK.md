@@ -36,6 +36,7 @@ Goal: Demo chatting with business data in Google Workspace.
 | LOG-001 | DISCOVERY | ARCH-DEF | Located exact ADK Agent implementation (SHA: 6eed78e) |
 | LOG-002 | DISCOVERY | ARCH-DEF | Verified Flask/Vertex integration pattern via Google Docs |
 | LOG-003 | DECISION | ARCH-DEF | Defined 4-layer architecture based on verified components |
+| LOG-004 | ESTIMATION | PHASE-01 | Cost Analysis for Gemini 2.5 Flash Stack |
 
 ---
 
@@ -142,3 +143,20 @@ def receive_chat_event():
     *   **Connector:** The Telephone (Connects you to the Research Assistant).
     *   **Google Chat:** You (Asking the question).
 *   **Why this works:** We aren't reinventing the wheel. We are simply connecting the Telephone (Chat) to the Researcher (Agent).
+
+---
+
+### [LOG-004] - [ESTIMATION] - Cost Analysis for Gemini 2.5 Flash Stack - Task: PHASE-01
+**Timestamp:** 2026-02-06 12:00
+**Summary:**
+Generated detailed cost estimate for the proposed stack using Gemini 2.5 Flash.
+- **Development:** < $0.20/month
+- **Pilot:** ~ $16.00/month
+- **Production:** ~ $220.00/month
+
+**Key Findings:**
+- **Gemini 2.5 Flash** is highly cost-effective ($0.30/M input, $2.50/M output).
+- **BigQuery** scanning is the highest volatility risk factor in production.
+- **Cloud Run/Vertex Runtime** costs are negligible for dev/pilot due to free tiers.
+
+**Artifact:** `estimate.md` created with full breakdown.
